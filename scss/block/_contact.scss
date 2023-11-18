@@ -1,0 +1,119 @@
+.contact{
+    background-image: url('../../img/contact_bg.svg'), url('../../img/contact_bg2.svg');
+    background-repeat: no-repeat;
+    background-position: left top, right bottom;
+}
+.contact__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 128px;
+}
+
+.contact__title {
+    max-width: 350px;
+    color: #FFF;
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 100px;
+    margin-bottom: 16px;
+}
+
+.contact__text {
+    max-width: 540px;
+    color: #F67E7E;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 48px;
+    margin-bottom: 32px;
+}
+.contact__list{
+    align-items: center;
+}
+.contact__item_text {
+    max-width: 445px;
+    color: #FFF;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 28px;
+    margin-bottom: 8px;
+    display: flex;
+    align-items: center;
+
+    &::before {
+        content: url('../../img/contact1.svg');
+        margin-right: 23px;
+    }
+}
+
+.contact__item_text2 {
+    &::before {
+        content: url('../../img/contact2.svg');
+    }
+}
+
+.contact__item_text3 {
+    &::before {
+        content: url('../../img/contact3.svg');
+    }
+}
+
+.contact__form {
+    display: flex;
+    flex-direction: column;
+    width: 540px;
+}
+
+.contact__input {
+    border: none;
+    font-size: 15px;
+    line-height: 25px;
+    max-width: 540px;
+    background-color: #014E56;
+    border-bottom: 1px solid #FFF;
+    margin-bottom: 24px;
+    padding-bottom: 16px;
+
+    &::placeholder {
+        color: #FFF;
+        max-width: 350px;
+        font-family: Livvic;
+        font-size: 15px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 25px;
+        letter-spacing: -0.115px;
+        opacity: 0.6;
+        padding-left: 14px;
+
+        &:hover{
+            opacity: 1;
+        }
+    }
+
+    &:nth-child(5) {
+        padding-bottom: 56px;
+    }
+}
+
+.contact__btn {
+    max-width: 123px;
+    border-radius: 24px;
+    border: 2px solid #FFF;
+    background-color: #FFF;
+    color: #004047;
+    padding: 9px 32px;
+    font-family: Livvic;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 28px;
+}
+
+@media screen and (max-width:992px) {
+    .contact__container{
+        flex-direction: column;
+    }
+    .block{
+        margin-bottom: 64px;
+    }
+}
